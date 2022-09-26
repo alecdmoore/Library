@@ -93,8 +93,8 @@ addBook.addEventListener("click", () => {
   addBookModal.style.display = "flex";
 });
 
-submitBook.addEventListener("click", (e) => {
-  e.preventDefault();
+document.getElementById("book-form").addEventListener("submit", (e) => {
+  // e.preventDefault();
   const temp = new Book(
     document.getElementById("author").value,
     document.getElementById("title").value,
